@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   FloatingActionButton(
-                    onPressed: () => controller.swipe(CardSwiperDirection.left),
+                    onPressed: () => controller.swipeLeft(),
                     backgroundColor: Colors.white,
                     child: const Icon(Icons.close, color: Colors.red, size: 30),
                   ),
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: const Icon(Icons.star, color: Colors.blue, size: 30),
                   ),
                   FloatingActionButton(
-                    onPressed: () => controller.swipe(CardSwiperDirection.right),
+                    onPressed: () => controller.swipeRight(),
                     backgroundColor: Colors.white,
                     child: const Icon(Icons.favorite, color: Colors.green, size: 30),
                   ),
